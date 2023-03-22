@@ -1,5 +1,10 @@
 # jangoredis
 
+djangoにredisを内蔵させたプルダウン登録フォームです(csvダウンロード付)
+今後インポート機能も追加予定です。
+どのような機能かは以下リンク先をみていただくとわかるかと思われます。
+https://github.com/yuukisfurue/jangoredis/issues/1
+
 models.py
 
 ```sh
@@ -41,3 +46,4 @@ class Plofile(models.Model):
     lastyear  = models.CharField(verbose_name="昨年(万)",choices=settings.LASTYEARS,max_length=100)
 
 ```
+
